@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border-radius: 0.3rem;
+}
+:root{
+    --font-primary:'Yanone Kaffeesatz', sans-serif;;
+}
+#fundo{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e4e8e6;
+}
+#cliente, #result{
+    height: auto;
+    width: auto;
+    min-width: 30rem;
+    padding: 1.5rem;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, .5);
+    background-color: #000000;
+    margin-top: 3rem;
+    color: aliceblue;
+    font-family: var(--font-primary);
+    letter-spacing: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inside {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
+    row-gap: 1rem;
+}
+.btn{
+   -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  font-family:var(--font-primary) ;
+  color: #ffffff;
+  border: none;
+  font-size: 20px;
+  background: #8f2b10;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #fc3c3c;
+  text-decoration: none;
+}
+#c0{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+}
+#cp{
+    height: auto;
+    width: auto;
+    padding: 1rem;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, .5);
+    background-color: #000000;
+    margin-top: 3rem;
+    color: aliceblue;
+    font-family: var(--font-primary);
+    letter-spacing: 0.3rem;
+    font-size: 0.7rem;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    column-gap: 2rem;
+    row-gap: 0.7rem;
+}
+#cp p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cp input{
+    margin: auto;
+}
+#cb{
+    
+    height: auto;
+    width: auto;
+    padding: 0.2rem;
+    font-family: var(--font-primary);
+    letter-spacing: 0.3rem;
+    font-size: 0.7rem;
+}
+#result{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    margin: auto;
+    min-width: 30rem;
+}
+#b0{
+    margin-top: 2rem;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 0px 29%; 
+}
+input{
+    border: none;
+    border-bottom: 1.5px dashed white;
+    border-radius: 0;
+    background-color: black;
+    color: white;
+    font-family: var(--font-primary);
+    letter-spacing: 0.3rem;
+    padding-left: 0.3rem;
+}
+input[type=text]::-webkit-inner-spin-button{
+    outline: none;
+    display: none;
+    appearance: none;
+}
+
+input:focus{
+    outline:none;
+    box-shadow: 0 0 0 0;
+}
+input:active{
+    outline: none;
+}
